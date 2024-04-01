@@ -35,8 +35,8 @@ def book_services():
 @application.route('/heat_pump')
 def heat_pump():
     return render_template('heat_pump.html')    
+application.run()
 
-
-if __name__ == '__main__':
-    ip = host_ip()
-    application.run(host=ip, port=9980, debug=True)
+# if __name__ == '__main__':
+#     ip = host_ip()
+#     application.run(host=ip, port=9980, debug=True)
